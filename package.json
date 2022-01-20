@@ -1,9 +1,9 @@
 {
-  "name": "insubuy-code-challenge",
+  "name": "code-challenge",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node server/bin/www"
+    "start": "node bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.3",
