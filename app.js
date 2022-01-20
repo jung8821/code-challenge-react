@@ -23,4 +23,3 @@ app.use('/quotes', quotesRouter);
 
 app.listen(8080,() => console.log(`Application started on port 8080, Go to http://localhost:8080`));
 
-module.exports = app;
