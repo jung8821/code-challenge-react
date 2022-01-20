@@ -1,6 +1,4 @@
 const express = require('express');
-const es6Renderer = require('express-es6-template-engine');
-const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const cors = require('cors');
