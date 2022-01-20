@@ -6,9 +6,7 @@ const logger = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 
-const indexRouter = require('./routes/index');
 const quotesRouter = require('./routes/quotes');
-const apiRouter = require('./routes/api');
 
 const app = express();
 
@@ -24,9 +22,9 @@ app.engine('html', es6Renderer);
 app.set('views',__dirname +'/public/views');
 app.set('view engine', 'html');
 
-app.use('/', indexRouter);
+
 app.use('/quotes', quotesRouter);
-app.use('/api', apiRouter);
+
 
 app.listen(8080,() => console.log(`Application started on port 8080, Go to http://localhost:8080`));
 
