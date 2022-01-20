@@ -16,11 +16,6 @@ app.use(bodyParser.json());
 // app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
-
-app.engine('html', es6Renderer);
-app.set('views',__dirname +'/public/views');
-app.set('view engine', 'html');
 
 
 app.use('/quotes', quotesRouter);
